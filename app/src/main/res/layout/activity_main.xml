@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_number"
+        android:hint="Nomor Pendaftaran"
+        android:layout_margin="6dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_name"
+        android:hint="Nama"
+        android:layout_below="@+id/et_number"
+        android:layout_margin="6dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_pob"
+        android:hint="Tempat Lahir"
+        android:layout_below="@+id/et_name"
+        android:layout_margin="6dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_dob"
+        android:hint="Tanggal Lahir"
+        android:layout_below="@+id/et_pob"
+        android:layout_margin="6dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_gender"
+        android:text="Jenis Kelamin"
+        android:layout_below="@+id/et_dob"
+        android:layout_margin="6dp" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rb_man"
+        android:text="L"
+        android:layout_toRightOf="@+id/tv_gender"
+        android:layout_below="@+id/et_dob"
+        android:layout_margin="6dp" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rb_woman"
+        android:text="P"
+        android:layout_toRightOf="@+id/rb_man"
+        android:layout_below="@+id/et_dob"
+        android:layout_margin="6dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_religion"
+        android:text="Agama"
+        android:layout_below="@+id/tv_gender"
+        android:layout_margin="6dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_apply"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tv_religion"
+        android:text="Daftar"
+        android:layout_margin="6dp" />
+</RelativeLayout>
