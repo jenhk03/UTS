@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondaryActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_number"
+        android:text="Nomor Pendaftaran"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:layout_margin="17sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name"
+        android:text="Nama"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_number"
+        android:layout_margin="17sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_jp"
+        android:text="Jalur"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_name"
+        android:layout_margin="17sp" />
+</RelativeLayout>
